@@ -22,29 +22,7 @@
     padding: 10px;
     margin: 0;
 }
-@media(max-width:500px){
-    .footer{
-        grid-template-columns: 200px 200px;
-        grid-row: 150px;
-        justify-content: space-between;
-    }
-    .footer1,.footer2{
-        margin-bottom: 20px;
-        border-bottom: 1px solid white;
 
-    }
-    .footer1 h1{
-        font-family: 'Rubik Distressed', cursive;
-        align-self: center;
-    }
-    .footer4 #app{
-        height: 40px;
-    }
-    
-    .footer4 #payments{
-        height: 40px;
-    }
-}
 .footer a{
     text-decoration: none;
     color: blueviolet;
@@ -103,4 +81,33 @@
 }
 .footer1>h4, .footer2>h4, .footer3>h4, .footer4>h4{
     padding-bottom: 15px;
+}
+
+@media(max-width:500px){
+    .footer{
+        grid-template-columns: 200px 200px;
+        grid-row: 150px;
+        justify-content: space-between;
+    }
+    .footer1,.footer2{
+        margin-bottom: 20px;
+        border-bottom: 1px solid white;
+    }
+
+    .footer1 h1{
+        font-family: 'Rubik Distressed', cursive;
+        align-self: center;
+    }
+    .footer4 #app{
+        height: 30px;
+        width: 120px;
+        border: 1px solid white;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    
+    .footer4 #payments{
+        height: 30px;
+        width: 120px;
+    }
 }

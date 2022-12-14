@@ -146,6 +146,10 @@ video{
     font-family: 'Solway', serif;
 }
 @media(max-width:500px){
+    .video{
+        padding: 0px;
+        margin: 0px;
+    }
     video{
         height: 200px;
         padding: 10px;
