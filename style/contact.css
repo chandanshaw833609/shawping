@@ -184,7 +184,8 @@
         width: 100%;
         justify-content: center;
         align-items: center;
-        margin-bottom: 15px;
+        margin-bottom: 25px;
+        padding-bottom: 10px;
     }
     .contact-form form h1{
         font-size: 25px;
