@@ -12,16 +12,7 @@
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Martian+Mono&display=swap');
-        body{
-            background-color: white;
-            /* background-image: url('images/banner2.webp');
-            height: 100vh;
-            width: 100%;
-            z-index: -1; */
-            border: 1px solid black;
-            margin: 15px;
-            height: 94vh;
-        }
+       
         .container{
             display: flex;
             justify-content: space-evenly;
@@ -64,12 +55,37 @@
             text-align: justify;
             font-family: 'Courier New', Courier, monospace;
         }
+        @media(max-width:500px){
+            .container{
+                flex-direction: column;
+                align-items: center;
+                height: 130vh;
+            } 
+            .image{
+                padding: 20px;
+                padding-top: 0px;
+                width: 90%;
+                height: 90vh;
+                border-radius: 5px;
+                margin: 10px;
+            }
+            .image>img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 5px;
+            }
+            .right-content{
+                height: 65vh;
+                width: 90%;
+            }
+        }
     </style>
 </head>
 <body class=" puff-in-center">
     <div class="container">
         <div class="image">
-            <img src="images/banner1.jpg" alt="" id="img_details">
+            <img src="images/tshiirt-2.avif" alt="" id="img_details">
         </div>
         <div class="right-content">
             <h1>Your choosed product</h1>
