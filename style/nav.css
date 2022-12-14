@@ -136,9 +136,9 @@ nav>ul>li>a:hover{
         gap: 0;
         flex-direction: row;
         align-items: center;
-        width: 90%;
+        width: 100%;
         transition: .3s;
-        padding: 10px;
+        padding: 8px;
     }
     .nav-item{
         margin: 16px 0;
