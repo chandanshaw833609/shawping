@@ -138,7 +138,7 @@ nav>ul>li>a:hover{
         align-items: center;
         width: 100%;
         transition: .3s;
-        padding: 8px;
+        padding: 5px;
     }
     .nav-item{
         margin: 16px 0;
