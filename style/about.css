@@ -148,7 +148,7 @@ video{
 @media(max-width:500px){
     .video{
         padding: 0px;
-        margin: 0px;
+        margin: 10px;
     }
     video{
         height: 200px;
