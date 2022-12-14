@@ -36,6 +36,21 @@ h3 h1{
     top: 15%;
     left: 38%;
 }
+@media(max-width:500px){
+    .sign{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .signin{
+       top: 30%;
+       left: 10%;
+    }
+    .signup{
+        top: 25%;
+        left: 8%;
+    }
+}
 tr{
     margin-bottom: 10px;
 }

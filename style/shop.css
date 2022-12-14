@@ -32,6 +32,15 @@
     color: crimson;
     font-size: 30px;
 }
+@media(max-width:500px){
+    .hero{
+        height: 25vh;
+        font-size: 20px;
+    }
+    .hero h5{
+        font-size: 15px;
+    }
+}
 /* Featured section start here */
 
 .featured-products>h1{

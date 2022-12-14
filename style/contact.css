@@ -49,6 +49,15 @@
     color: crimson;
     font-size: 30px;
 }
+@media(max-width:500px){
+    .hero{
+        height: 25vh;
+        font-size: 20px;
+    }
+    .hero h5{
+        font-size: 15px;
+    }
+}
 
 .contact-details{
     display: flex;
@@ -93,6 +102,7 @@
     font-family: 'Solway', serif;
     justify-content: space-between;
 }
+
 .contact-form form{
     display: flex;
     width: 60%;
@@ -159,4 +169,61 @@
     font-size: 13px;
     margin-bottom: 4px;
 }
-
+@media(max-width:500px){
+    .contact-form{
+        flex-direction: column;
+        height: 100vh;
+        margin: 0;
+        padding: 15px;
+        border: none;
+    }
+    .contact-form form{
+        padding-inline: 0px;
+        border: 1px solid black;
+        height: 50vh;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    .contact-form form h1{
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .contact-form form input{
+        width: 300px;
+    }
+    .contact-form form textarea{
+        width: 300px;
+        margin: 5px;
+        padding-inline:15px;
+        margin-bottom: 0px;
+    }
+    .contact-form .people{
+        padding: 0px;
+        height: 50vh;
+        width: 100%;
+    }
+    .contact-details{
+        flex-direction: column;
+        height: 60vh;
+        padding: 10px;
+        border: none;
+        border: 1px solid black;
+    }
+    .contact-details .details{
+        width: 100%;
+        border: none;
+        margin-bottom: 10px;
+    }
+    .contact-details .details h2{
+        font-size: 20px;
+    }
+    .contact-details .details h1{
+        font-size: 25px;
+    }
+    .contact-details .map{
+        width: 100%;
+        height: 40vh;
+    }
+}
