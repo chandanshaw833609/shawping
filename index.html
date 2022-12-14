@@ -13,50 +13,64 @@
 </head>
 <body>
   <nav>
-    <h1 class="tracking-in-expand ">SHAWPING</h1>
-    <ul>
-        <li><a href="#" class="active tracking-in-expand ">HOME</a></li>
-        <li id="shop" style="display: none;"><a href="shop.html" >SHOP</a></li>
-        <li><a href="blog.html">BLOG</a></li>
-        <li><a href="about.html">ABOUT</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
+    <div class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <h1>SHAWPING</h1>
+    <ul class="nav-menu tracking-in-expand">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link current-link">HOME</a>
+        </li>
+        <li id="shop" style="display: none;" class="nav-item">
+          <a href="shop.html" class="nav-link">SHOP</a>
+        </li>
+        <li class="nav-item">
+          <a href="blog.html" class="nav-link">BLOG</a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link">CONTACT</a>
+        </li>
     </ul>
-      <div class="iframes">
+    <div class="iframes">
 
-        <div class="cart tracking-in-expand ">
-          <a href="cart.html"><i class="fas fa-cart-plus" id="cart" style="display: none;"></i></a>
-          <p id="cart_para" style="display: none;">Cart</p>
-        </div>
+      <div class="cart tracking-in-expand ">
+        <a href="cart.html"><i class="fas fa-cart-plus" id="cart" style="display: none;"></i></a>
+        <p id="cart_para" style="display: none;">Cart</p>
+      </div>
 
-        <div class="login tracking-in-expand ">
-          <a href="signin.html"><i class="far fa-user"></i></a>
-          <p id="user_data">LogIn</p>
-        </div>
-        
+      <div class="login tracking-in-expand ">
+        <a href="signin.html"><i class="far fa-user"></i></a>
+        <p id="user_data">LogIn</p>
       </div>
       
+    </div>
+      
 </nav>
-<!-- scale-up-center -->
-    <div id="hero">
+
+    <div id="hero" class="scale-up-center">
       <div class="content">
         <div class="left-content">
           <h1>Special offers on</h1>
           <h1>All products</h1>
-          <!-- class="shake-horizontal" -->
-          <h1 style="color:red" >Hurry Up</h1>
+          <h1 style="color:red" class="shake-horizontal" >Hurry Up</h1>
         </div>
         <div class="right-content">
           <h1>Winter Sale is</h1>
           <h1>Live Now</h1>
-          <h1 style="color:red">50% off</h1>
+          <h1 style="color:red" class="shake-horizontal">50% off</h1>
         </div>
       </div>
     </div>
-   <section class="featured-products">
+   <section id="products">
     <h1>Featured Products</h1>
     <p>Winter Collection new modern design</p>
-    <div class="featured-product">
-      <div class="product product-1">
+    <div class="products">
+      <div class="product">
         <img src="https://images.unsplash.com/photo-1591213954196-2d0ccb3f8d4c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="">
         <h5 style="margin-top:10px;">Denim Jackets</h5>
         <p style="color:gold">
@@ -70,9 +84,9 @@
           <p>$49.99</p>
           <i class="far fa-heart" id="heart"></i>
         </div> -->
-        <p>$49.99<i class="fas fa-heart cart" onclick="changeColor()" id="heart"  style="margin-left:190px; color: white;"></i></p>
+        <p>$49.99<i class="fas fa-heart heart" id="heart" onclick="changeColor()" style="color: white;"></i></p>
       </div>
-      <div class="product product-1">
+      <div class="product">
         <img src="https://images.unsplash.com/photo-1602859922641-b2078ee8f299?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="">
         <h5 style="margin-top:10px;">Sweat Sirts</h5>
         <p style="color:gold">
@@ -82,9 +96,9 @@
           <i class="fas fa-star"></i>
           <i class="fas fa-star"></i>
         </p>
-        <p>$49.99<i class="fas fa-heart cart" onclick="changeColor_1()" id="heart_1"  style="margin-left:190px; color: white;"></i></p>
+        <p>$49.99<i class="fas fa-heart heart" id="heart_1" onclick="changeColor_1()" style="color: white;"></i></p>
       </div>
-      <div class="product product-1">
+      <div class="product">
         <img src="https://images.unsplash.com/photo-1617608587180-f54da346e217?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="">
         <h5 style="margin-top:10px;">Leather Jackets</h5>
         <p style="color:gold">
@@ -94,9 +108,9 @@
           <i class="fas fa-star"></i>
           <i class="fas fa-star"></i>
         </p>
-        <p>$49.99<i class="fas fa-heart cart" onclick="changeColor_2()" id="heart_2"  style="margin-left:190px; color: white;"></i></p>
+        <p>$49.99<i class="fas fa-heart heart" onclick="changeColor_2()" id="heart_2"  style="color: white;"></i></p>
       </div>
-      <div class="product product-1">
+      <div class="product">
         <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=720&q=80" alt="">
         <h5 style="margin-top:10px;">Stylish Hoddie</h5>
         <p style="color:gold">
@@ -106,15 +120,15 @@
           <i class="fas fa-star"></i>
           <i class="fas fa-star"></i>
         </p>
-        <p>$49.99<i class="fas fa-heart cart" onclick="changeColor_3()" id="heart_3"  style="margin-left:190px; color: white;"></i></p>
+        <p>$49.99<i class="fas fa-heart heart" onclick="changeColor_3()" id="heart_3"  style="color: white;"></i></p>
       </div>
     </div>
    </section>
-   <section class="featured-products">
+   <section id="products">
     <h1>NEW ARRIVALS</h1>
     <p>Winter Collection new modern design</p>
-    <div class="featured-product">
-      <div class="product product-1">
+    <div class="products">
+      <div class="product">
         <img src="https://images.unsplash.com/photo-1551734413-52d32b449f07?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fFNXRUFURVJTfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60" alt="">
         <h5 style="margin-top:10px;">Woolen Sweaters</h5>
         <p style="color:gold">
@@ -124,9 +138,9 @@
           <i class="fas fa-star"></i>
           <i class="fas fa-star"></i>
         </p>
-        <p>$49.99<i class="fas fa-heart cart" onclick="changeColor_4()" id="heart_4"  style="margin-left:190px; color: white;"></i></p>
+        <p>$49.99<i class="fas fa-heart heart" onclick="changeColor_4()" id="heart_4"  style="color: white;"></i></p>
       </div>
-      <div class="product product-1">
+      <div class="product">
         <img src="https://images.unsplash.com/photo-1621184455862-c163dfb30e0f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="">
         <h5 style="margin-top:10px;">Stylish</h5>
         <p style="color:gold">
@@ -136,9 +150,9 @@
           <i class="fas fa-star"></i>
           <i class="fas fa-star"></i>
         </p>
-        <p>$49.99<i class="fas fa-heart cart" onclick="changeColor_5()" id="heart_5"  style="margin-left:190px; color: white;"></i></p>
+        <p>$49.99<i class="fas fa-heart heart" onclick="changeColor_5()" id="heart_5"  style="color: white;"></i></p>
       </div>
-      <div class="product product-1">
+      <div class="product">
         <img src="https://images.unsplash.com/photo-1622445275992-e7efb32d2257?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80" alt="">
         <h5 style="margin-top:10px;">Tshirts</h5>
         <p style="color:gold">
@@ -148,9 +162,9 @@
           <i class="fas fa-star"></i>
           <i class="fas fa-star"></i>
         </p>
-        <p>$49.99<i class="fas fa-heart cart" onclick="changeColor_6()" id="heart_6"  style="margin-left:190px; color: white;"></i></p>
+        <p>$49.99<i class="fas fa-heart heart" onclick="changeColor_6()" id="heart_6"  style="color: white;"></i></p>
       </div>
-      <div class="product product-1">
+      <div class="product">
         <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="">
         <h5 style="margin-top:10px;">Jeans</h5>
         <p style="color:gold">
@@ -160,7 +174,7 @@
           <i class="fas fa-star"></i>
           <i class="fas fa-star"></i>
         </p>
-        <p>$49.99<i class="fas fa-heart cart" onclick="changeColor_7()" id="heart_7"  style="margin-left:190px; color: white;"></i></p>
+        <p>$49.99<i class="fas fa-heart heart" onclick="changeColor_7()" id="heart_7"  style="color: white;"></i></p>
       </div>
     </div>
    </section>
@@ -178,8 +192,8 @@
       <button class="button">Explore More</button>
     </div>
    </section>
-    
-   <div class="footer">
+
+   <!-- <div class="footer">
     <div class="footer1">
         <h1>SHAWPING</h1>
         <h4>Contact</h4>
@@ -193,7 +207,7 @@
         <p><a href="#">Delivery</a></p>
         <p><a href="#">PrivacyPo.</a></p>
         <p><a href="#">Terms</a></p>
-        <p><a href="#">Contact</a></p>
+        <p><a href="#">Contact Us</a></p>
     </div>
     <div class="footer3">
         <h4>Contacts</h4>
@@ -206,19 +220,20 @@
     <div class="footer4">
         <h4>Install App</h4>
         <img src="https://en.logodownload.org/wp-content/uploads/2019/06/get-it-on-google-play-badge-1.png" alt="" id="app">
-        <h5>Secured Payments gateways</h5>
+        <h5>Secured Payments</h5>
         <img src="https://cdn.shopify.com/s/files/1/2237/8199/files/s.png?4611" alt="" id="payments">
     </div>
-</div>
+</div> -->
+
 </body>
 
 <script type="text/javascript">
 
-const bg = document.getElementById('hero');
-window.addEventListener('scroll',function(){
-  bg.style.backgroundSize = 110 - +window.pageYOffset/12 +'%';
-  bg.style.opacity = 1 - +window.pageYOffset/700 +'';
-})
+// const bg = document.getElementById('hero');
+// window.addEventListener('scroll',function(){
+//   bg.style.backgroundSize = 110 - +window.pageYOffset/12 +'%';
+//   bg.style.opacity = 1 - +window.pageYOffset/700 +'';
+// })
 
 
 function changeColor(){
@@ -237,6 +252,22 @@ function changeColor_1(){
     document.getElementById("heart_1").style.color = 'white';
   }
 }
+
+// const heart = document.querySelector(".heart");
+// heart.addEventListener("click",() =>{
+//   if(document.getElementsByClassName("heart").style.color === "white"){
+//     heart.classList.toggle("active");
+//   }
+// })
+// document.querySelectorAll(".heart").forEach(n => n.addEventListener("click",() =>{
+//     heart.classList.toggle("active_heart");
+// }))
+// console.log(document.getElementsByClassName("heart").style.color);
+// console.log("red");
+
+// function changeColor(){
+//   document.getElementsById("heart").style.color = 'red';
+// }
 
 function changeColor_2(){
   if (document.getElementById("heart_2").style.color === "white") {
@@ -287,7 +318,7 @@ function changeColor_7(){
   }
 }
 
-console.log(document.getElementById("heart").style.color);
+console.log(document.getElementById("heart_7").style.color);
 
 function getData(){
   // localStorage.removeItem("user_data");
@@ -302,5 +333,6 @@ getData();
 
 
 </script>
+<script src="main.js"></script>
 
 </html>
