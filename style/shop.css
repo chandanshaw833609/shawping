@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Satisfy&family=Syne+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik+Distressed&family=Satisfy&family=Syne+Mono&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    border-bottom: 0;
+}
+:root{
+    --primary-color:rgb(199, 17, 17);
+}
+
+
+.hero{
+    background-image: url("https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    height: 50vh;
+    color: white;
+    font-family: 'Satisfy', cursive;
+    font-size: 30px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h5{
+    color: crimson;
+    font-size: 30px;
+}
+/* Featured section start here */
+
+.featured-products>h1{
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Rubik Distressed', cursive;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+.featured-products>h1+p{
+    text-align: center;
+    font-family: 'Satisfy', cursive;
+    margin-bottom: 20px;
+    font-size: larger;
+}
+.featured-product{
+    display: flex;
+    overflow-x: auto;
+}
+.featured-product::-webkit-scrollbar{
+    width: 0;
+}
+.product{
+    box-shadow: 2px 2px 5px grey;
+    padding: 10px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    margin-right: 30px;
+    margin-left: 30px;
+    border: 1px solid black;
+}
+.product:hover{
+    box-shadow: 5px 5px 50px grey;
+    cursor: pointer;
+}
+.product img {
+    height: 250px;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.product h5{
+    font-family: 'Syne Mono', monospace;
+}
+
+
+
+ @-webkit-keyframes scale-in-center {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+  }
+  @keyframes scale-in-center {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+  }
+  

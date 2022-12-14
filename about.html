@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style/about.css">
+    <link rel="stylesheet" href="style/nav.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/animation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.css" integrity="sha512-4wfcoXlib1Aq0mUtsLLM74SZtmB73VHTafZAvxIp/Wk9u1PpIsrfmTvK0+yKetghCL8SHlZbMyEcV8Z21v42UQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <nav>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <h1 class="tracking-in-expand ">SHAWPING</h1>
+        <ul class="nav-menu tracking-in-expand">
+            <li class="nav-item">
+              <a href="index.html" class="tracking-in-expand nav-link">HOME</a>
+            </li>
+            <li id="shop" style="display: none;" class="nav-item">
+              <a href="shop.html" class="nav-link">SHOP</a>
+            </li>
+            <li class="nav-item">
+              <a href="blog.html" class="nav-link">BLOG</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link current-link">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">CONTACT</a>
+            </li>
+        </ul>
+        <div class="iframes">
+    
+          <div class="cart tracking-in-expand ">
+            <a href="cart.html"><i class="fas fa-cart-plus" id="cart" style="display: none;"></i></a>
+            <p id="cart_para" style="display: none;">Cart</p>
+          </div>
+    
+          <div class="login tracking-in-expand ">
+            <a href="signin.html"><i class="far fa-user"></i></a>
+            <p id="user_data">LogIn</p>
+          </div>
+          
+        </div>
+          
+    </nav>
+
+    <div class="hero scale-up-center">
+        <h1 class="scale-up-center">#Know Us</h1>
+        <h5 class="scale-up-center">wanna see who we are...</h5>
+    </div>
+    
+    <section class="blog">
+        <div class="blog-box">
+            <div class="blog-image">
+                <img src="https://images.unsplash.com/photo-1468421870903-4df1664ac249?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80" alt="">
+            </div>
+            <div class="blog-details">
+                <h1>Who Are We?</h1>
+                <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione ullam velit sequi obcaecati repudiandae! Maxime.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem tempora ab expedita, iure sit dolorum ipsum qui quod deserunt animi?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem odit in fugiat nobis ad eaque quas culpa dolor dolorem ipsam.
+                </h4>
+                <p><b>Continue reading....</b></p>
+            </div>
+        </div>
+    </section>
+    <div class="video">
+        <h1>Download Our <a href="#">App</a></h1>
+        <video src="video/app.mp4" autoplay loop muted controls></video>
+    </div>
+
+    <!-- <div class="footer">
+        <div class="footer1">
+            <h1>SHAWPING</h1>
+            <h4>Contact</h4>
+            <p>Address: 46, Panparalane, Bhadrakali</p>
+            <p>Mobile : 8336098357 | 9674766719</p>
+            <p>Hours : 10.00 to 18.00 | Mon to Sat</p>
+        </div>
+        <div class="footer2">
+            <h4>About</h4>
+            <p><a href="#">About Us</a></p>
+            <p><a href="#">Delivery</a></p>
+            <p><a href="#">PrivacyPo.</a></p>
+            <p><a href="#">Terms</a></p>
+            <p><a href="#">Contact Us</a></p>
+        </div>
+        <div class="footer3">
+            <h4>Contacts</h4>
+            <p><a href="#">Signin</a></p>
+            <p><a href="#">Viewcart</a></p>
+            <p><a href="#">My Wishlist</a></p>
+            <p><a href="#">Track Order</a></p>
+            <p><a href="#">Help</a></p>
+        </div>
+        <div class="footer4">
+            <h4>Install App</h4>
+            <img src="https://en.logodownload.org/wp-content/uploads/2019/06/get-it-on-google-play-badge-1.png" alt="" id="app">
+            <h5>Secured Payments</h5>
+            <img src="https://cdn.shopify.com/s/files/1/2237/8199/files/s.png?4611" alt="" id="payments">
+        </div>
+    </div> -->
+</body>
+<script>
+    function getData(){
+      // localStorage.removeItem("user_data");
+    let user_data =   JSON.parse(localStorage.getItem("user_data"));
+      document.getElementById("user_data").innerHTML = user_data.first_name;
+      document.getElementById("cart").style.display = 'block';
+      document.getElementById("cart_para").style.display = 'block';
+      document.getElementById("shop").style.display = 'block';
+      console.log(user_data.user_name);
+    }
+    getData();
+    </script>
+    <script src="main.js"></script>
+</html>

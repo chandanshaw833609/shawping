@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Satisfy&family=Syne+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik+Distressed&family=Satisfy&family=Syne+Mono&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    border-bottom: 0;
+}
+:root{
+    --primary-color:rgb(199, 17, 17);
+}
+
+.button{
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 2px;
+    width: auto;
+    height: 45px;
+    padding: 10px;
+    color: white;
+}
+.button:hover{
+    background-color: crimson;
+    color: white;
+}
+
+/* Hero section start here */
+
+#hero{
+    height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    object-fit: cover;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Satisfy', cursive;
+    height: 80vh;
+    padding: 50px;
+}
+.left-content>h1{
+    margin-bottom: 15px;
+    font-size: 50px;
+}
+.right-content>h1{
+    margin-bottom: 15px;
+    font-size: 50px;
+    text-align: center;
+}
+
+@media(max-width:500px){
+    #hero{
+        height: 25vh;
+        background-position: center;
+        background-size: cover;
+        background-repeat: none;
+        position: relative;
+    }
+    .content{
+        display: flex;
+        height: 25vh;
+        align-items: center;
+        justify-content: space-between;
+        gap: 100px;
+        padding: 0;
+        padding-inline:20px;
+    }
+    
+    .left-content>h1{
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+    .right-content>h1{
+        margin-bottom: 15px;
+        font-size: 20px;
+        text-align: right;
+    }
+}
+/* Featured section start here */
+
+#products>h1{
+    text-align: center;
+    margin-top: 50px;
+    font-weight: 500;
+    font-family: 'Rubik Distressed', cursive;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+#products>h1+p{
+    text-align: center;
+    font-family: 'Satisfy', cursive;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    font-size: larger;
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-template-rows: repeat(auto-fit);
+    justify-content: space-evenly;
+    justify-items: center;
+}
+.product{
+    box-shadow: 2px 2px 5px grey;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+.product:hover{
+    box-shadow: 5px 5px 50px grey;
+    cursor: pointer;
+}
+.product img {
+    height: 350px;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.product h5{
+    font-family: 'Syne Mono', monospace;
+    padding-bottom: 10px;
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.cart{
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: black;
+}
+.heart{
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: black;
+    margin-left: 190px;
+}
+
+@media(max-width:500px){
+    #products>h1{
+        font-size: 20px;
+        margin: 0;
+        margin-top: 15px;
+    }
+    #products>h1+p{
+        font-size: small;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+    .products{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
+        grid-template-rows: repeat(auto-fit);
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .product{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        width: 180px;
+        margin-bottom: 10px;
+        padding-top: 10px;
+    }
+    .cart{
+        margin-left: 25px;
+        color: white;
+        border-radius: 50%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .heart{
+        color: white;
+        border-radius: 50%;
+        padding: 10px;
+        background-color: black;
+        margin-left: 10px;
+        margin: 10px;
+    }
+    .product img {
+        height: 200px;
+        width: 150px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+}
+
+/* banner section start here */
+
+.banner{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    grid-template-rows: repeat(auto-fit);
+    justify-content: center;
+    align-items: center;
+}
+.banner_heading{
+    margin-top: 30px; 
+    text-align: center; 
+    font-family: 'Rubik Distressed', cursive;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.banner-left{
+    height: 250px;
+    background-image: url("https://images.unsplash.com/photo-1462804993656-fac4ff489837?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=700&q=60");
+    background-position: cover;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+.banner-right{
+    height: 250px;
+    background-image: url("https://images.unsplash.com/photo-1480528813727-199fa7208f62?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.banner-left,.banner-right{
+    font-family: 'Satisfy', cursive;
+    margin: 20px;
+}
+
+@media(max-width:500px){
+
+    .banner_heading{
+        font-size: 25px;
+        margin: 0;
+        margin-top: 20px;
+    }
+    .banner-left,.banner-right{
+        height: 20vh;
+        text-transform: lowercase;
+    }
+    .banner-left>h2,.banner-right>h2{
+        font-size: 30px;
+    }
+}
+
+/* footer section start here */
+
+
+
+  
+  
+  

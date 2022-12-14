@@ -1,0 +1,60 @@
+.banner>img{
+    height: 500px;
+    object-fit: cover;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+img{
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.font{
+    font-family: 'Sono', sans-serif;
+}
+h3 h1{
+    font-family: 'Sono', sans-serif;
+}
+
+.sign{
+    background-image: url("https://images.unsplash.com/photo-1607083207118-f60f4fff8efe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEyfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=700&q=60");
+    height: 100vh;
+    filter: brightness(50%);
+    background-repeat: none;
+    background-size: cover;
+    object-fit: center;
+    background-position: center;
+}
+.signin{
+    position: absolute;
+    top: 30%;
+    left: 38%;
+}
+.signup{
+    position: absolute;
+    top: 15%;
+    left: 38%;
+}
+tr{
+    margin-bottom: 10px;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 0 150px;
+}
+td{
+    text-align: left;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+input{
+    text-align: center;
+    width: 300px;
+}
+
+.pos{
+    position: sticky;
+    top: 3px;
+}

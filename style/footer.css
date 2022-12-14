@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Satisfy&family=Syne+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik+Distressed&family=Satisfy&family=Syne+Mono&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    border-bottom: 0;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 40vh;
+    grid-gap: 5px;
+    background-color: rgb(237, 231, 231);
+    padding-top: 50px;
+    border: 1px solid black;
+    color: white;
+    background-color: black;
+    font-family: 'Solway', serif;
+}
+.footer a{
+    text-decoration: none;
+    color: blueviolet;
+}
+.footer1{
+    padding-left: 50px;
+    font-size: smaller;
+}
+.footer1 h1{
+    font-family: 'Rubik Distressed', cursive;
+    margin-bottom: 25px;
+}
+.footer1>img{
+    border-radius: 50%;
+    object-fit: cover;
+}
+.footer2{
+    font-size: small;
+    padding-inline: 150px;
+}
+
+.footer3{
+    font-size: small;
+}
+
+.footer a:hover{
+    background-color: aliceblue;
+    padding:3px 1px;
+    border-radius: 3px;
+}
+.footer4{
+    padding: 20px;
+    padding-top: 0px;
+    padding-right: 50px;
+    font-family: 'Solway', serif;
+}
+.footer4 #app{
+    height: 50px;
+    width: 170px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.footer4 #payments{
+    height: 50px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+.footer1>p, .footer2>p, .footer3>p, .footer4>p{
+    padding-bottom: 15px;
+}
+.footer1>h1, .footer2>h1, .footer3>h1, .footer4>h1{
+    padding-bottom: 15px;
+}
+.footer1>h4, .footer2>h4, .footer3>h4, .footer4>h4{
+    padding-bottom: 15px;
+}

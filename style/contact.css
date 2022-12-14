@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Satisfy&family=Syne+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik+Distressed&family=Satisfy&family=Syne+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Solway:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    border-bottom: 0;
+}
+:root{
+    --primary-color:rgb(199, 17, 17);
+}
+.button{
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 2px;
+    width: auto;
+    height: 45px;
+    padding: 10px;
+    color: white;
+}
+.button:hover{
+    background-color: crimson;
+    color: white;
+}
+
+/* nav start here */
+
+/* nav end here */
+
+.hero{
+    background-image: url("https://images.unsplash.com/photo-1546864903-e99c8237840d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE1fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=700&q=60");
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    height: 50vh;
+    color: white;
+    font-family: 'Satisfy', cursive;
+    font-size: 30px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h5{
+    color: crimson;
+    font-size: 30px;
+}
+
+.contact-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 75vh;
+    border: 1px solid black;
+    margin: 10px;
+}
+.contact-details .details{
+    width: 40%;
+    font-family: 'Solway', serif;
+}
+.contact-details .details h2{
+    margin-bottom: 10px;
+    color: grey;
+}
+.contact-details .details h1{
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 30px;
+}
+.contact-details .details p{
+    padding: 5px;
+    font-weight: 500;
+}
+.contact-details .map{
+   width: 50%;
+   height:70vh;
+}
+.contact-details .map iframe{
+    width: 100%;
+    height:100%;
+ }
+.contact-form{
+    display: flex;
+    height: 70vh;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    font-family: 'Solway', serif;
+    justify-content: space-between;
+}
+.contact-form form{
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    justify-items: center;
+    align-items: flex-start;
+    height: 100%;
+    padding-inline: 40px;
+}
+.contact-form form h2{
+    color: grey;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.contact-form form h1{
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.contact-form form input{
+    width: 600px;
+    margin: 5px;
+    border: 1px solid black;
+    height: 30px;
+    border-radius: 2px;
+    padding-inline:15px;
+}
+.contact-form form textarea{
+    width: 600px;
+    margin: 5px;
+    border: 1px solid black;
+    padding-inline:15px;
+}
+.contact-form .people{
+    padding: 10px;
+}
+
+.contact-form .people-details{
+    box-shadow: 2px 2px 150px grey;
+    display: flex;
+    justify-content: space-between;
+    height: 30%;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-inline: 15px;
+}
+.contact-form .people .people-details img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.contact-form .people .people-details .people-message{
+    line-break: 5px;
+}
+.contact-form .people .people-details .people-message h1{
+    font-weight: 600;
+    color: grey;
+    font-size: 25px;
+}
+.contact-form .people .people-details .people-message p{
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+

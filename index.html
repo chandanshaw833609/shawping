@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.css" integrity="sha512-4wfcoXlib1Aq0mUtsLLM74SZtmB73VHTafZAvxIp/Wk9u1PpIsrfmTvK0+yKetghCL8SHlZbMyEcV8Z21v42UQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style/home.css">
+    <link rel="stylesheet" href="style/nav.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/animation.css">
+</head>
+<body>
+  <nav>
+    <h1 class="tracking-in-expand ">SHAWPING</h1>
+    <ul>
+        <li><a href="#" class="active tracking-in-expand ">HOME</a></li>
+        <li id="shop" style="display: none;"><a href="shop.html" >SHOP</a></li>
+        <li><a href="blog.html">BLOG</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+      <div class="iframes">
+
+        <div class="cart tracking-in-expand ">
+          <a href="cart.html"><i class="fas fa-cart-plus" id="cart" style="display: none;"></i></a>
+          <p id="cart_para" style="display: none;">Cart</p>
+        </div>
+
+        <div class="login tracking-in-expand ">
+          <a href="signin.html"><i class="far fa-user"></i></a>
+          <p id="user_data">LogIn</p>
+        </div>
+        
+      </div>
+      
+</nav>
+<!-- scale-up-center -->
+    <div id="hero">
+      <div class="content">
+        <div class="left-content">
+          <h1>Special offers on</h1>
+          <h1>All products</h1>
+          <!-- class="shake-horizontal" -->
+          <h1 style="color:red" >Hurry Up</h1>
+        </div>
+        <div class="right-content">
+          <h1>Winter Sale is</h1>
+          <h1>Live Now</h1>
+          <h1 style="color:red">50% off</h1>
+        </div>
+      </div>
+    </div>
+   <section class="featured-products">
+    <h1>Featured Products</h1>
+    <p>Winter Collection new modern design</p>
+    <div class="featured-product">
+      <div class="product product-1">
+        <img src="https://images.unsplash.com/photo-1591213954196-2d0ccb3f8d4c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="">
+        <h5 style="margin-top:10px;">Denim Jackets</h5>
+        <p style="color:gold">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </p>
+        <!-- <div class="price">
+          <p>$49.99</p>
+          <i class="far fa-heart" id="heart"></i>
+        </div> -->
+        <p>$49.99<i class="fas fa-heart cart" onclick="changeColor()" id="heart"  style="margin-left:190px; color: white;"></i></p>
+      </div>
+      <div class="product product-1">
+        <img src="https://images.unsplash.com/photo-1602859922641-b2078ee8f299?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="">
+        <h5 style="margin-top:10px;">Sweat Sirts</h5>
+        <p style="color:gold">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </p>
+        <p>$49.99<i class="fas fa-heart cart" onclick="changeColor_1()" id="heart_1"  style="margin-left:190px; color: white;"></i></p>
+      </div>
+      <div class="product product-1">
+        <img src="https://images.unsplash.com/photo-1617608587180-f54da346e217?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="">
+        <h5 style="margin-top:10px;">Leather Jackets</h5>
+        <p style="color:gold">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </p>
+        <p>$49.99<i class="fas fa-heart cart" onclick="changeColor_2()" id="heart_2"  style="margin-left:190px; color: white;"></i></p>
+      </div>
+      <div class="product product-1">
+        <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=720&q=80" alt="">
+        <h5 style="margin-top:10px;">Stylish Hoddie</h5>
+        <p style="color:gold">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </p>
+        <p>$49.99<i class="fas fa-heart cart" onclick="changeColor_3()" id="heart_3"  style="margin-left:190px; color: white;"></i></p>
+      </div>
+    </div>
+   </section>
+   <section class="featured-products">
+    <h1>NEW ARRIVALS</h1>
+    <p>Winter Collection new modern design</p>
+    <div class="featured-product">
+      <div class="product product-1">
+        <img src="https://images.unsplash.com/photo-1551734413-52d32b449f07?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fFNXRUFURVJTfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60" alt="">
+        <h5 style="margin-top:10px;">Woolen Sweaters</h5>
+        <p style="color:gold">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </p>
+        <p>$49.99<i class="fas fa-heart cart" onclick="changeColor_4()" id="heart_4"  style="margin-left:190px; color: white;"></i></p>
+      </div>
+      <div class="product product-1">
+        <img src="https://images.unsplash.com/photo-1621184455862-c163dfb30e0f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="">
+        <h5 style="margin-top:10px;">Stylish</h5>
+        <p style="color:gold">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </p>
+        <p>$49.99<i class="fas fa-heart cart" onclick="changeColor_5()" id="heart_5"  style="margin-left:190px; color: white;"></i></p>
+      </div>
+      <div class="product product-1">
+        <img src="https://images.unsplash.com/photo-1622445275992-e7efb32d2257?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80" alt="">
+        <h5 style="margin-top:10px;">Tshirts</h5>
+        <p style="color:gold">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </p>
+        <p>$49.99<i class="fas fa-heart cart" onclick="changeColor_6()" id="heart_6"  style="margin-left:190px; color: white;"></i></p>
+      </div>
+      <div class="product product-1">
+        <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="">
+        <h5 style="margin-top:10px;">Jeans</h5>
+        <p style="color:gold">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </p>
+        <p>$49.99<i class="fas fa-heart cart" onclick="changeColor_7()" id="heart_7"  style="margin-left:190px; color: white;"></i></p>
+      </div>
+    </div>
+   </section>
+
+   <h1 class="banner_heading">Best Offers & Deals for You</h1>
+   <section class="banner">
+    <div class="banner-left">
+      <h2>BUY 1 GET 1 FREE</h2>
+      <p style="color: red; font-weight: 800;">Best classic dress is on sale</p>
+      <button class="button">Explore More</button>
+    </div>
+    <div class="banner-right">
+      <h2>UPCOMING SEASON</h2>
+      <p style="color: red; font-weight: 800;">Best winter collection is here</p>
+      <button class="button">Explore More</button>
+    </div>
+   </section>
+    
+   <div class="footer">
+    <div class="footer1">
+        <h1>SHAWPING</h1>
+        <h4>Contact</h4>
+        <p>Address: 46, Panparalane, Bhadrakali</p>
+        <p>Mobile : 8336098357 | 9674766719</p>
+        <p>Hours : 10.00 to 18.00 | Mon to Sat</p>
+    </div>
+    <div class="footer2">
+        <h4>About</h4>
+        <p><a href="#">About Us</a></p>
+        <p><a href="#">Delivery</a></p>
+        <p><a href="#">PrivacyPo.</a></p>
+        <p><a href="#">Terms</a></p>
+        <p><a href="#">Contact</a></p>
+    </div>
+    <div class="footer3">
+        <h4>Contacts</h4>
+        <p><a href="#">Signin</a></p>
+        <p><a href="#">Viewcart</a></p>
+        <p><a href="#">My Wishlist</a></p>
+        <p><a href="#">Track Order</a></p>
+        <p><a href="#">Help</a></p>
+    </div>
+    <div class="footer4">
+        <h4>Install App</h4>
+        <img src="https://en.logodownload.org/wp-content/uploads/2019/06/get-it-on-google-play-badge-1.png" alt="" id="app">
+        <h5>Secured Payments gateways</h5>
+        <img src="https://cdn.shopify.com/s/files/1/2237/8199/files/s.png?4611" alt="" id="payments">
+    </div>
+</div>
+</body>
+
+<script type="text/javascript">
+
+const bg = document.getElementById('hero');
+window.addEventListener('scroll',function(){
+  bg.style.backgroundSize = 110 - +window.pageYOffset/12 +'%';
+  bg.style.opacity = 1 - +window.pageYOffset/700 +'';
+})
+
+
+function changeColor(){
+  if (document.getElementById("heart").style.color === "white") {
+    document.getElementById("heart").style.color = 'red';
+  } 
+  else if (document.getElementById("heart").style.color === "red") {
+    document.getElementById("heart").style.color = 'white';
+  }
+}
+function changeColor_1(){
+  if (document.getElementById("heart_1").style.color === "white") {
+    document.getElementById("heart_1").style.color = 'red';
+  } 
+  else if (document.getElementById("heart_1").style.color === "red") {
+    document.getElementById("heart_1").style.color = 'white';
+  }
+}
+
+function changeColor_2(){
+  if (document.getElementById("heart_2").style.color === "white") {
+    document.getElementById("heart_2").style.color = 'red';
+  } 
+  else if (document.getElementById("heart_2").style.color === "red") {
+    document.getElementById("heart_2").style.color = 'white';
+  }
+}
+function changeColor_3(){
+  if (document.getElementById("heart_3").style.color === "white") {
+    document.getElementById("heart_3").style.color = 'red';
+  } 
+  else if (document.getElementById("heart_3").style.color === "red") {
+    document.getElementById("heart_3").style.color = 'white';
+  }
+}
+function changeColor_4(){
+  if (document.getElementById("heart_4").style.color === "white") {
+    document.getElementById("heart_4").style.color = 'red';
+  } 
+  else if (document.getElementById("heart_4").style.color === "red") {
+    document.getElementById("heart_4").style.color = 'white';
+  }
+}
+function changeColor_5(){
+  if (document.getElementById("heart_5").style.color === "white") {
+    document.getElementById("heart_5").style.color = 'red';
+  } 
+  else if (document.getElementById("heart_5").style.color === "red") {
+    document.getElementById("heart_5").style.color = 'white';
+  }
+}
+function changeColor_6(){
+  if (document.getElementById("heart_6").style.color === "white") {
+    document.getElementById("heart_6").style.color = 'red';
+  } 
+  else if (document.getElementById("heart_6").style.color === "red") {
+    document.getElementById("heart_6").style.color = 'white';
+  }
+}
+function changeColor_7(){
+  if (document.getElementById("heart_7").style.color === "white") {
+    document.getElementById("heart_7").style.color = 'red';
+  } 
+  else if (document.getElementById("heart_7").style.color === "red") {
+    document.getElementById("heart_7").style.color = 'white';
+  }
+}
+
+console.log(document.getElementById("heart").style.color);
+
+function getData(){
+  // localStorage.removeItem("user_data");
+let user_data =   JSON.parse(localStorage.getItem("user_data"));
+  document.getElementById("user_data").innerHTML = user_data.first_name;
+  document.getElementById("cart").style.display = 'block';
+  document.getElementById("cart_para").style.display = 'block';
+  document.getElementById("shop").style.display = 'block';
+  console.log(user_data.user_name);
+}
+getData();
+
+
+</script>
+
+</html>

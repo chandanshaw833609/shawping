@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignIn</title>
+    <link rel="stylesheet" href="style/sign.css">
+    <link rel="stylesheet" href="style/animation.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sono:wght@800&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="sign color-change-2x ">
+        
+    </div>
+    <div class="p-3 mb-5 bg-body rounded signin shadow-lg tilt-in-fwd-tr">
+        <h1 class="text-center text-primaryr mb-3 font">SignIn</h1>
+        <form action="#">
+            <table>
+                <tr>
+                    <td><input type="text" id="user_name" placeholder=" Username" name="username" Required></td>
+                </tr>
+                <tr>
+                    <td><input type="password" id="pass1" name="pass1" placeholder="Password" Required></td>
+                </tr>
+                <tr>
+            </table>
+            <p class="text-center mt-3"><button class="btn btn-primary mt-3 font " onclick="signIn()">SignIn</button></p>
+            <p style="margin-left:50px;">Don't have a account! <a href="signup.html">Signup</a></p>
+        </form>
+    </div>
+</body>
+<script >
+
+    function getData(){
+        let user_data =   JSON.parse(localStorage.getItem("user_data"));
+        return user_data;
+    }
+    //  var data = getData();
+    //  console.log(data);
+  
+  function signIn(){
+  
+       let data = getData();
+  
+       let user_name = document.getElementById('user_name').value;
+       let user_pass = document.getElementById('pass1').value;
+
+       if (data.user_pass_1 == "" && data.user_name == "") {
+            alert("login fail..Please Enter correct credential!");
+       }
+       else if (data.user_name == user_name &&  data.user_pass_1 == user_pass) {
+        window.location.href = "index.html";
+            alert("login success");
+           
+       } else {
+         alert("login fail..Please Enter correct credential!");
+       }
+       localStorage.setItem("data", JSON.stringify(data));
+     }
+      </script>
+</script>
+<script src="main.js"></script>
+</html>
