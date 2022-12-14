@@ -142,7 +142,7 @@
 }
 
 .contact-form .people-details{
-    box-shadow: 2px 2px 150px grey;
+    box-shadow: 1px 1px 2px grey;
     display: flex;
     justify-content: space-between;
     height: 30%;
